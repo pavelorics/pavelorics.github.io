@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蘑菇mv传媒_影像内容厂牌 | 让每个故事长出画面</title>
+<meta name="description" content="蘑菇mv传媒是一家专注音乐影像、品牌短片与纪录片的内容厂牌，以导演思维与社区共创，把灵感养成会发光的作品。">
+<meta name="theme-color" content="#101418">
+<style>
+:root{
+  --ink:#0e1216;
+  --ink-2:#151b21;
+  --paper:#f6f2e9;
+  --paper-2:#ece5d6;
+  --lime:#c8ff3d;
+  --mint:#6fe7c0;
+  --coral:#ff7a5c;
+  --sky:#8ec9ff;
+  --line:rgba(246,242,233,.14);
+  --line-d:rgba(14,18,22,.12);
+  --shadow:0 24px 60px -28px rgba(0,0,0,.55);
+  --r:18px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--ink);
+  color:var(--paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.2;font-weight:800;letter-spacing:-.01em}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--mint);font-weight:700;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--mint);display:block}
+.section{padding:clamp(64px,9vw,120px) 0;position:relative}
+.section-head{max-width:760px;margin-bottom:clamp(28px,4vw,48px)}
+.section-head h2{font-size:clamp(1.8rem,3.6vw,2.9rem);margin:.7rem 0 .9rem}
+.section-head p{color:rgba(246,242,233,.68);font-size:1rem}
+
+/* ---------- header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:blur(14px);
+  background:rgba(14,18,22,.72);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;height:72px}
+.brand{display:flex;align-items:center;gap:.65rem;font-weight:800;font-size:1.05rem;letter-spacing:.01em}
+.brand .mark{
+  width:38px;height:38px;border-radius:12px;
+  background:radial-gradient(circle at 30% 25%,var(--lime),#6fbd18 70%);
+  display:grid;place-items:center;box-shadow:0 8px 22px -10px rgba(200,255,61,.8);
+}
+.brand .mark svg{width:22px;height:22px}
+.brand small{display:block;font-size:.66rem;letter-spacing:.2em;color:rgba(246,242,233,.5);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:1.55rem;font-size:.9rem;font-weight:600}
+.nav-links a{color:rgba(246,242,233,.74);transition:color .25s}
+.nav-links a:hover{color:var(--lime)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.62rem 1.1rem;border-radius:999px;
+  background:var(--lime);color:#14210a;font-weight:800;font-size:.86rem;
+  transition:transform .2s,box-shadow .2s;
+  box-shadow:0 10px 26px -14px rgba(200,255,61,.9);
+}
+.nav-cta:hover{transform:translateY(-2px)}
+.burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);place-items:center}
+.burger span{display:block;width:18px;height:2px;background:var(--paper);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--paper)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.mobile-menu{display:none;border-top:1px solid var(--line);padding:.8rem 0 1.2rem}
+.mobile-menu a{display:block;padding:.7rem .2rem;font-weight:600;border-bottom:1px dashed var(--line)}
+.mobile-menu.open{display:block}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(56px,8vw,104px) 0 clamp(48px,7vw,88px)}
+.hero::before{
+  content:"";position:absolute;inset:-30% -10% auto auto;width:70vw;height:70vw;
+  background:radial-gradient(circle at 60% 40%,rgba(200,255,61,.16),transparent 62%);
+  pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;left:-14vw;bottom:-30vw;width:60vw;height:60vw;
+  background:radial-gradient(circle at 40% 60%,rgba(111,231,192,.12),transparent 62%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);align-items:center;position:relative;z-index:2}
+.hero h1{
+  font-size:clamp(2.6rem,7vw,5.1rem);
+  letter-spacing:-.03em;line-height:1.02;margin:.5rem 0 1rem;
+  background:linear-gradient(100deg,#fff 20%,var(--lime) 78%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-lead{font-size:clamp(1rem,1.5vw,1.14rem);color:rgba(246,242,233,.76);max-width:36em}
+.hero-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 1.8rem}
+.hero-tags span{
+  font-size:.78rem;padding:.36rem .8rem;border-radius:999px;
+  border:1px solid var(--line);color:rgba(246,242,233,.72);background:rgba(255,255,255,.03);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.5rem;border-radius:999px;
+  font-weight:800;font-size:.94rem;transition:transform .2s,background .2s,border-color .2s;
+}
+.btn-primary{background:var(--lime);color:#14210a;box-shadow:0 16px 36px -20px rgba(200,255,61,1)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);color:var(--paper);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.hero-stats{display:flex;gap:clamp(1.2rem,3vw,2.6rem);margin-top:2.2rem;flex-wrap:wrap}
+.hero-stats div strong{display:block;font-size:clamp(1.4rem,2.4vw,1.9rem);color:var(--lime);line-height:1.1}
+.hero-stats div span{font-size:.78rem;color:rgba(246,242,233,.55);letter-spacing:.05em}
+
+/* hero visual: stacked "reel" cards */
+.reel-stack{position:relative;aspect-ratio:1/1.02;max-width:520px;margin-inline:auto}
+.reel-card{
+  position:absolute;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid rgba(255,255,255,.09);background:var(--ink-2);
+  transform-origin:bottom left;
+}
+.reel-card svg{width:100%;height:100%}
+.rc1{width:70%;aspect-ratio:4/5;left:0;bottom:0;transform:rotate(-6deg);z-index:3}
+.rc2{width:62%;aspect-ratio:4/5;right:0;top:4%;transform:rotate(5deg);z-index:2}
+.rc3{width:48%;aspect-ratio:1/1;right:2%;bottom:2%;transform:rotate(-2deg);z-index:4;border-radius:50%}
+.play-badge{
+  position:absolute;left:6%;top:2%;z-index:6;
+  display:flex;align-items:center;gap:.6rem;padding:.55rem .9rem .55rem .6rem;
+  border-radius:999px;background:rgba(14,18,22,.78);border:1px solid var(--line);
+  backdrop-filter:blur(8px);font-size:.78rem;font-weight:700;
+}
+.play-badge i{
+  width:26px;height:26px;border-radius:50%;background:var(--lime);display:grid;place-items:center;
+  color:#14210a;font-size:.7rem;
+}
+.floating-note{
+  position:absolute;right:-4%;top:44%;z-index:6;padding:.7rem 1rem;border-radius:14px;
+  background:var(--paper);color:var(--ink);font-size:.76rem;font-weight:800;
+  transform:rotate(4deg);box-shadow:var(--shadow);
+}
+.floating-note small{display:block;font-weight:600;color:#5c6670;font-size:.66rem;letter-spacing:.06em}
+
+/* marquee */
+.marquee{
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  overflow:hidden;background:rgba(255,255,255,.02);
+}
+.marquee-track{display:flex;gap:3rem;align-items:center;padding:1rem 0;white-space:nowrap;animation:scroll 34s linear infinite;width:max-content}
+.marquee-track span{font-size:.86rem;font-weight:700;letter-spacing:.18em;color:rgba(246,242,233,.5);text-transform:uppercase;display:inline-flex;align-items:center;gap:3rem}
+.marquee-track span::after{content:"◆";color:var(--lime);font-size:.6rem}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- about / cube ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.about-list{display:grid;gap:1.1rem;margin-top:1.6rem}
+.about-item{
+  padding:1.15rem 1.3rem;border-radius:16px;border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
+  display:flex;gap:1rem;align-items:flex-start;transition:border-color .25s,transform .25s;
+}
+.about-item:hover{border-color:rgba(200,255,61,.5);transform:translateY(-3px)}
+.about-item .num{
+  font-size:.74rem;font-weight:800;color:#14210a;background:var(--lime);
+  width:28px;height:28px;border-radius:9px;display:grid;place-items:center;flex:none;
+}
+.about-item h4{font-size:1.02rem;margin-bottom:.25rem}
+.about-item p{font-size:.9rem;color:rgba(246,242,233,.62)}
+.about-visual{
+  border-radius:26px;overflow:hidden;border:1px solid var(--line);
+  background:var(--ink-2);box-shadow:var(--shadow);position:sticky;top:100px;
+}
+.about-visual svg{width:100%;height:auto}
+.about-visual .cap{padding:1rem 1.2rem;border-top:1px solid var(--line);font-size:.8rem;color:rgba(246,242,233,.6);display:flex;justify-content:space-between;gap:1rem}
+
+/* ---------- works ---------- */
+.works{background:linear-gradient(180deg,var(--paper),var(--paper-2));color:var(--ink)}
+.works .eyebrow{color:#3f7d12}
+.works .eyebrow::before{background:#3f7d12}
+.works .section-head h2{color:var(--ink)}
+.works .section-head p{color:rgba(14,18,22,.62)}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
+.filter{
+  padding:.45rem 1rem;border-radius:999px;border:1px solid var(--line-d);
+  font-size:.82rem;font-weight:700;color:rgba(14,18,22,.62);transition:.2s;
+}
+.filter.active,.filter:hover{background:var(--ink);color:var(--lime);border-color:var(--ink)}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.work{
+  border-radius: var(--r);overflow:hidden;background:#fff;border:1px solid var(--line-d);
+  box-shadow:0 18px 40px -30px rgba(14,18,22,.5);
+  transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;
+}
+.work:hover{transform:translateY(-6px);box-shadow:0 30px 60px -32px rgba(14,18,22,.55)}
+.work .thumb{position:relative;aspect-ratio:16/10;overflow:hidden}
+.work .thumb svg{width:100%;height:100%}
+.work .dur{
+  position:absolute;right:.6rem;bottom:.6rem;background:rgba(14,18,22,.8);color:#fff;
+  font-size:.7rem;padding:.18rem .5rem;border-radius:6px;font-weight:700;
+}
+.work .body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.work .meta{display:flex;justify-content:space-between;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#7b8794;font-weight:700}
+.work h3{font-size:1.06rem;line-height:1.35}
+.work p{font-size:.87rem;color:#5b6672;flex:1}
+.work .watch{margin-top:.5rem;font-size:.82rem;font-weight:800;color:#3f7d12;display:inline-flex;align-items:center;gap:.4rem}
+
+/* ---------- stats ---------- */
+.stats-band{background:var(--ink);border-block:1px solid var(--line)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.stat{background:var(--ink);padding:clamp(26px,4vw,44px) 1.2rem;text-align:center}
+.stat strong{display:block;font-size:clamp(2rem,4vw,3rem);color:var(--lime);line-height:1;letter-spacing:-.03em}
+.stat span{display:block;margin-top:.6rem;font-size:.82rem;color:rgba(246,242,233,.6)}
+
+/* ---------- process ---------- */
+.process{background:var(--ink-2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;counter-reset:step}
+.step{
+  border:1px solid var(--line);border-radius:16px;padding:1.5rem 1.25rem;
+  background:rgba(255,255,255,.025);position:relative;overflow:hidden;transition:.25s;
+}
+.step:hover{background:rgba(200,255,61,.06);border-color:rgba(200,255,61,.4)}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-size:2.4rem;font-weight:900;color:rgba(200,255,61,.18);line-height:1;display:block;margin-bottom:.8rem;
+}
+.step h4{font-size:1rem;margin-bottom:.4rem}
+.step p{font-size:.86rem;color:rgba(246,242,233,.6)}
+
+/* ---------- team ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.member{
+  border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--ink-2);
+  transition:transform .3s;
+}
+.member:hover{transform:translateY(-5px)}
+.member .avatar{aspect-ratio:1/1;position:relative}
+.member .avatar svg{width:100%;height:100%}
+.member .info{padding:1rem 1.1rem 1.2rem}
+.member h4{font-size:1rem}
+.member .role{font-size:.76rem;color:var(--lime);letter-spacing:.1em;font-weight:700;text-transform:uppercase}
+.member p{font-size:.82rem;color:rgba(246,242,233,.58);margin-top:.5rem}
+
+/* ---------- journal ---------- */
+.journal-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1.2rem}
+.post{
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(255,255,255,.025);
+  display:flex;flex-direction:column;transition:.25s;
+}
+.post:hover{border-color:rgba(200,255,61,.45);transform:translateY(-4px)}
+.post .cover{aspect-ratio:16/9}
+.post .cover svg{width:100%;height:100%}
+.post .txt{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.post .tag{font-size:.7rem;letter-spacing:.14em;color:var(--mint);font-weight:800;text-transform:uppercase}
+.post h4{font-size:1.02rem;line-height:1.4}
+.post p{font-size:.85rem;color:rgba(246,242,233,.6);flex:1}
+.post time{font-size:.74rem;color:rgba(246,242,233,.42)}
+
+/* ---------- testimonials ---------- */
+.quote-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.quote{
+  border:1px solid var(--line);border-radius:18px;padding:1.5rem 1.4rem;
+  background:linear-gradient(170deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
+  display:flex;flex-direction:column;gap:1rem;
+}
+.quote .mark{font-size:2rem;color:var(--lime);line-height:.6;font-family:Georgia,serif}
+.quote p{font-size:.92rem;color:rgba(246,242,233,.82)}
+.quote footer{font-size:.78rem;color:rgba(246,242,233,.5);border-top:1px solid var(--line);padding-top:.8rem}
+.quote footer b{color:var(--paper);display:block;font-size:.86rem}
+
+/* ---------- faq ---------- */
+.faq{max-width:860px;margin-inline:auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;gap:1rem;align-items:center;
+  padding:1.15rem .2rem;text-align:left;font-size:1rem;font-weight:700;
+}
+.faq-q .ico{width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:.25s;font-size:.85rem}
+.faq-item.open .faq-q .ico{background:var(--lime);color:#14210a;border-color:var(--lime);transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:rgba(246,242,233,.64);font-size:.92rem}
+.faq-a div{padding:0 .2rem 1.2rem}
+
+/* ---------- cta ---------- */
+.cta{
+  position:relative;overflow:hidden;border-radius:28px;padding:clamp(34px,6vw,70px);
+  background:linear-gradient(135deg,#1c2418,#101418 60%);
+  border:1px solid rgba(200,255,61,.22);text-align:center;
+}
+.cta::before{
+  content:"";position:absolute;inset:auto -10% -60% -10%;height:80%;
+  background:radial-gradient(ellipse at 50% 0,rgba(200,255,61,.22),transparent 65%);
+  pointer-events:none;
+}
+.cta h2{font-size:clamp(1.8rem,4vw,3rem);margin:.6rem 0 1rem;position:relative}
+.cta p{color:rgba(246,242,233,.68);max-width:44em;margin:0 auto 1.8rem;position:relative}
+.cta-actions{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;position:relative}
+.cta .eyebrow{justify-content:center}
+
+/* ---------- footer ---------- */
+.site-footer{border-top:1px solid var(--line);padding:clamp(40px,6vw,70px) 0 28px;background:var(--ink)}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2rem}
+.footer-brand p{font-size:.88rem;color:rgba(246,242,233,.55);margin-top:1rem;max-width:28em}
+.footer-col h5{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(246,242,233,.42);margin:0 0 1rem}
+.footer-col a,.footer-col span{display:block;font-size:.88rem;color:rgba(246,242,233,.7);padding:.24rem 0;transition:color .2s}
+.footer-col a:hover{color:var(--lime)}
+.newsletter{display:flex;gap:.5rem;margin-top:1rem;max-width:320px}
+.newsletter input{
+  flex:1;padding:.6rem .9rem;border-radius:10px;border:1px solid var(--line);
+  background:rgba(255,255,255,.04);color:var(--paper);font-size:.85rem;outline:none;
+}
+.newsletter input:focus{border-color:var(--lime)}
+.newsletter button{padding:.6rem 1rem;border-radius:10px;background:var(--lime);color:#14210a;font-weight:800;font-size:.82rem}
+.footer-bottom{
+  margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-size:.78rem;color:rgba(246,242,233,.42);
+}
+.socials{display:flex;gap:.6rem}
+.socials a{
+  width:34px;height:34px;border-radius:10px;border:1px solid var(--line);
+  display:grid;place-items:center;font-size:.72rem;font-weight:800;color:rgba(246,242,233,.7);transition:.2s;
+}
+.socials a:hover{background:var(--lime);color:#14210a;border-color:var(--lime)}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .reel-stack{max-width:420px;order:-1;aspect-ratio:1/1}
+  .about-grid{grid-template-columns:1fr}
+  .about-visual{position:static}
+  .work-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .journal-grid{grid-template-columns:1fr 1fr}
+  .quote-wrap{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .nav-links{display:none}
+  .burger{display:grid}
+  .work-grid,.journal-grid,.steps{grid-template-columns:1fr}
+  .floating-note{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 3c3.6 0 6.5 2.9 6.5 6.5 0 1.6-.6 3-1.6 4.1.4.6.6 1.4.6 2.2 0 .6-.1 1.1-.4 1.6-.6-1-1.6-1.7-2.8-1.7-.7 0-1.4.2-1.9.7-.6-.5-1.3-.7-2-.7-1.2 0-2.2.7-2.8 1.7-.3-.5-.4-1-.4-1.6 0-.8.2-1.6.6-2.2A6.5 6.5 0 0 1 5.5 9.5C5.5 5.9 8.4 3 12 3Z" fill="#14210a"/>
+            <rect x="10.9" y="12.6" width="2.2" height="8" rx="1.1" fill="#14210a"/>
+          </svg>
+        </span>
+        <span>蘑菇mv传媒<small>MUSHROOM MV MEDIA</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">关于我们</a>
+        <a href="#works">作品</a>
+        <a href="#process">合作流程</a>
+        <a href="#team">团队</a>
+        <a href="#journal">手记</a>
+        <a href="#faq">问答</a>
+      </div>
+      <a class="nav-cta" href="#contact">发起合作 <span aria-hidden="true">↗</span></a>
+      <button class="burger" id="burger" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">关于我们</a>
+      <a href="#works">作品</a>
+      <a href="#process">合作流程</a>
+      <a href="#team">团队</a>
+      <a href="#journal">手记</a>
+      <a href="#faq">问答</a>
+      <a href="#contact">发起合作</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">影像内容厂牌 · 自 2016</span>
+        <h1>蘑菇mv传媒</h1>
+        <p class="hero-lead">我们相信故事会像蘑菇一样，在潮湿的灵感里悄悄生长。蘑菇mv传媒以导演思维整合策划、拍摄、剪辑与声音，为音乐人、品牌与社区制作有呼吸感的影像。</p>
+        <div class="hero-tags">
+          <span>音乐影像</span><span>品牌短片</span><span>纪录现场</span><span>社区共创</span><span>后期与调色</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">观看作品集 <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#contact">聊聊你的故事</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>320+</strong><span>已交付影像作品</span></div>
+          <div><strong>48</strong><span>合作音乐人 / 品牌</span></div>
+          <div><strong>9</strong><span>年持续创作</span></div>
+        </div>
+      </div>
+      <div class="reel-stack" aria-hidden="true">
+        <div class="play-badge"><i>▶</i> 正在播放 · 孢子计划 Vol.06</div>
+        <div class="floating-note">本月新片<small>《潮湿的夏天》MV</small></div>
+        <div class="reel-card rc1">
+          <svg viewBox="0 0 400 500" role="img" aria-label="抽象影像画面一">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2b3a1e"/><stop offset="1" stop-color="#0e1216"/>
+              </linearGradient>
+              <radialGradient id="g1b" cx="35%" cy="30%" r="70%">
+                <stop offset="0" stop-color="#c8ff3d" stop-opacity=".9"/><stop offset="1" stop-color="#c8ff3d" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="url(#g1)"/>
+            <circle cx="140" cy="150" r="120" fill="url(#g1b)"/>
+            <g stroke="#f6f2e9" stroke-opacity=".18" fill="none">
+              <path d="M-20 360 Q120 270 220 350 T440 320"/>
+              <path d="M-20 400 Q130 310 230 390 T440 360"/>
+              <path d="M-20 440 Q140 350 240 430 T440 400"/>
+            </g>
+            <g fill="#6fe7c0" fill-opacity=".85">
+              <ellipse cx="300" cy="120" rx="14" ry="9" transform="rotate(-20 300 120)"/>
+              <ellipse cx="330" cy="160" rx="9" ry="6" transform="rotate(-20 330 160)"/>
+            </g>
+            <rect x="30" y="420" width="90" height="4" rx="2" fill="#c8ff3d"/>
+            <text x="30" y="455" fill="#f6f2e9" fill-opacity=".55" font-size="13" font-family="sans-serif" letter-spacing="3">MV / 4K</text>
+          </svg>
+        </div>
+        <div class="reel-card rc2">
+          <svg viewBox="0 0 360 450" role="img" aria-label="抽象影像画面二">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#172531"/><stop offset="1" stop-color="#2b1830"/>
+              </linearGradient>
+            </defs>
+            <rect width="360" height="450" fill="url(#g2)"/>
+            <g fill="none" stroke="#8ec9ff" stroke-opacity=".5" stroke-width="1.5">
+              <circle cx="180" cy="200" r="60"/>
+              <circle cx="180" cy="200" r="95" stroke-opacity=".25"/>
+              <circle cx="180" cy="200" r="130" stroke-opacity=".12"/>
+            </g>
+            <circle cx="180" cy="200" r="18" fill="#ff7a5c"/>
+            <g fill="#f6f2e9" fill-opacity=".7" font-family="sans-serif" font-size="11" letter-spacing="2">
+              <text x="28" y="420">DIRECTOR CUT</text>
+            </g>
+          </svg>
+        </div>
+        <div class="reel-card rc3">
+          <svg viewBox="0 0 300 300" role="img" aria-label="抽象影像圆形标识">
+            <defs>
+              <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#c8ff3d"/><stop offset="1" stop-color="#3f7d12"/>
+              </linearGradient>
+            </defs>
+            <rect width="300" height="300" fill="#0e1216"/>
+            <circle cx="150" cy="150" r="118" fill="url(#g3)"/>
+            <circle cx="150" cy="150" r="118" fill="none" stroke="#0e1216" stroke-width="2" stroke-dasharray="6 10" opacity=".5"/>
+            <path d="M150 70c34 0 62 28 62 62 0 26-16 48-38 57v18c0 8-6 14-14 14h-20c-8 0-14-6-14-14v-18c-22-9-38-31-38-57 0-34 28-62 62-62Z" fill="#0e1216" opacity=".88"/>
+            <rect x="136" y="196" width="28" height="26" rx="6" fill="#0e1216"/>
+            <circle cx="150" cy="130" r="9" fill="#c8ff3d"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>音乐影像</span><span>品牌短片</span><span>纪录现场</span><span>社区共创</span><span>调色与声音</span><span>导演工作室</span>
+      <span>音乐影像</span><span>品牌短片</span><span>纪录现场</span><span>社区共创</span><span>调色与声音</span><span>导演工作室</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <span class="eyebrow">关于蘑菇mv传媒</span>
+        <div class="section-head" style="margin-bottom:0">
+          <h2>在一间会生长的影像棚里，<br>把灵感养成作品</h2>
+          <p>蘑菇mv传媒诞生于一群乐手与剪辑师的合租屋。我们不追逐浮夸的特效，更在意画面里的呼吸、颗粒与真实情绪。九年间，我们从独立乐队的第一支 MV，拍到品牌年度大片，也把镜头交给社区里愿意讲故事的人。</p>
+        </div>
+        <div class="about-list">
+          <div class="about-item">
+            <span class="num">01</span>
+            <div><h4>导演思维先行</h4><p>从一句歌词或一个产品卖点出发，先找到情绪的支点，再决定镜头语言，而不是反过来堆砌素材。</p></div>
+          </div>
+          <div class="about-item">
+            <span class="num">02</span>
+            <div><h4>小而完整的团队</h4><p>策划、导演、摄影、剪辑、调色与声音常驻同一层楼，沟通成本低，改片不靠传话。</p></div>
+          </div>
+          <div class="about-item">
+            <span class="num">03</span>
+            <div><h4>社区共创机制</h4><p>每季度开放「孢子计划」，为独立创作者提供器材、场地与后期支持，好故事值得被更多人看见。</p></div>
+          </div>
+          <div class="about-item">
+            <span class="num">04</span>
+            <div><h4>可持续的交付</h4><p>预算透明、里程碑清晰，成片之外同步交付横竖版素材与字幕工程，方便长期复用。</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <svg viewBox="0 0 520 620" role="img" aria-label="蘑菇mv传媒工作室氛围插画">
+          <defs>
+            <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1b2420"/><stop offset="1" stop-color="#0e1216"/>
+            </linearGradient>
+            <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c8ff3d" stop-opacity=".35"/><stop offset="1" stop-color="#c8ff3d" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2a3a44"/><stop offset="1" stop-color="#121b21"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="620" fill="url(#room)"/>
+          <polygon points="380,0 520,0 520,300 300,140" fill="url(#beam)"/>
+          <g fill="none" stroke="#f6f2e9" stroke-opacity=".1">
+            <path d="M0 470 H520"/><path d="M0 500 H520"/>
+          </g>
+          <rect x="60" y="120" width="330" height="200" rx="12" fill="url(#screen)" stroke="#f6f2e9" stroke-opacity=".18"/>
+          <rect x="80" y="140" width="290" height="160" rx="6" fill="#0a1216" stroke="#6fe7c0" stroke-opacity=".35"/>
+          <polyline points="95,265 130,225 160,245 195,180 230,215 265,165 300,205 340,150" fill="none" stroke="#c8ff3d" stroke-width="2.5" stroke-opacity=".9"/>
+          <polyline points="95,290 135,270 175,282 215,250 255,268 295,238 340,258" fill="none" stroke="#8ec9ff" stroke-opacity=".5" stroke-width="1.6"/>
+          <rect x="60" y="330" width="330" height="14" rx="7" fill="#f6f2e9" fill-opacity=".12"/>
+          <rect x="110" y="344" width="16" height="120" rx="4" fill="#f6f2e9" fill-opacity=".08"/>
+          <rect x="324" y="344" width="16" height="120" rx="4" fill="#f6f2e9" fill-opacity=".08"/>
+          <!-- desk -->
+          <rect x="40" y="452" width="440" height="16" rx="8" fill="#f6f2e9" fill-opacity=".16"/>
+          <rect x="70" y="468" width="12" height="80" fill="#f6f2e9" fill-opacity=".08"/>
+          <rect x="440" y="468" width="12" height="80" fill="#f6f2e9" fill-opacity=".08"/>
+          <!-- monitor small -->
+          <rect x="70" y="360" width="120" height="82" rx="8" fill="#101a1f" stroke="#f6f2e9" stroke-opacity=".2"/>
+          <rect x="80" y="370" width="100" height="62" rx="4" fill="#16242b"/>
+          <rect x="86" y="376" width="50" height="6" rx="3" fill="#c8ff3d" fill-opacity=".8"/>
+          <rect x="86" y="388" width="76" height="4" rx="2" fill="#f6f2e9" fill-opacity=".2"/>
+          <rect x="86" y="398" width="64" height="4" rx="2" fill="#f6f2e9" fill-opacity=".15"/>
+          <rect x="86" y="408" width="70" height="4" rx="2" fill="#f6f2e9" fill-opacity=".15"/>
+          <!-- camera -->
+          <g transform="translate(250 380)">
+            <rect x="0" y="10" width="96" height="58" rx="10" fill="#20262b" stroke="#f6f2e9" stroke-opacity=".2"/>
+            <circle cx="30" cy="39" r="20" fill="#0c1114" stroke="#6fe7c0" stroke-opacity=".6"/>
+            <circle cx="30" cy="39" r="9" fill="#6fe7c0" fill-opacity=".35"/>
+            <rect x="66" y="24" width="22" height="16" rx="3" fill="#c8ff3d" fill-opacity=".8"/>
+            <rect x="30" y="0" width="40" height="14" rx="4" fill="#2b343a"/>
+          </g>
+          <!-- mushroom motif -->
+          <g transform="translate(410 340)">
+            <rect x="18" y="26" width="14" height="46" rx="7" fill="#f6f2e9" fill-opacity=".75"/>
+            <path d="M2 30c0-18 14-30 30-30s30 12 30 30c0 4-4 6-8 6H10c-4 0-8-2-8-6Z" fill="#ff7a5c"/>
+            <circle cx="18" cy="18" r="3.4" fill="#f6f2e9" fill-opacity=".85"/>
+            <circle cx="38" cy="12" r="2.6" fill="#f6f2e9" fill-opacity=".8"/>
+            <circle cx="48" cy="24" r="2" fill="#f6f2e9" fill-opacity=".7"/>
+          </g>
+          <g fill="#c8ff3d" fill-opacity=".8">
+            <circle cx="470" cy="120" r="3"/><circle cx="440" cy="180" r="2"/><circle cx="492" cy="220" r="2.4"/>
+          </g>
+          <text x="60" y="596" fill="#f6f2e9" fill-opacity=".4" font-size="13" font-family="sans-serif" letter-spacing="4">MUSHROOM MV MEDIA · STUDIO B</text>
+        </svg>
+        <div class="cap"><span>工作室 · B 棚</span><span>自然光 + 一盏顶灯</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section class="section works" id="works">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">精选作品</span>
+        <h2>把每一次拍摄，剪成会留下来的片段</h2>
+        <p>以下为蘑菇mv传媒近两年的部分公开作品，涵盖音乐 MV、品牌短片与纪录现场。点击分类可筛选，想看更多成片可在合作表单里索取作品集链接。</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="作品分类">
+        <button class="filter active" data-filter="all">全部</button>
+        <button class="filter" data-filter="mv">音乐影像</button>
+        <button class="filter" data-filter="brand">品牌短片</button>
+        <button class="filter" data-filter="doc">纪录现场</button>
+      </div>
+      <div class="work-grid" id="workGrid">
+
+        <article class="work" data-cat="mv">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《潮湿的夏天》封面">
+              <defs><linearGradient id="w1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#243b1c"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w1)"/>
+              <circle cx="470" cy="120" r="90" fill="#c8ff3d" fill-opacity=".2"/>
+              <circle cx="470" cy="120" r="52" fill="#c8ff3d" fill-opacity=".55"/>
+              <g stroke="#f6f2e9" stroke-opacity=".2" fill="none">
+                <path d="M0 300 Q100 240 200 290 T400 270 T640 300"/>
+                <path d="M0 330 Q110 280 210 320 T410 300 T640 330"/>
+              </g>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">潮湿的夏天</text>
+              <text x="42" y="112" fill="#6fe7c0" font-size="13" font-family="sans-serif" letter-spacing="4">MUSIC VIDEO · 2024</text>
+            </svg>
+            <span class="dur">04:12</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>音乐影像</span><span>2024</span></div>
+            <h3>潮湿的夏天 · 乐队 MV</h3>
+            <p>一整夜的雨戏，三台机位轮转，用霓虹和积水讲完一段没说出口的告别。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+        <article class="work" data-cat="brand">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《一口森林》封面">
+              <defs><linearGradient id="w2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a2a33"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w2)"/>
+              <g fill="none" stroke="#8ec9ff" stroke-opacity=".5">
+                <circle cx="200" cy="200" r="70"/><circle cx="200" cy="200" r="110" stroke-opacity=".25"/>
+              </g>
+              <g transform="translate(420 130)">
+                <rect x="30" y="40" width="20" height="70" rx="10" fill="#f6f2e9" fill-opacity=".7"/>
+                <path d="M0 46C0 22 20 6 40 6s40 16 40 40c0 5-5 8-10 8H10C5 54 0 51 0 46Z" fill="#ff7a5c"/>
+                <circle cx="26" cy="28" r="4" fill="#f6f2e9" fill-opacity=".85"/>
+                <circle cx="52" cy="20" r="3" fill="#f6f2e9" fill-opacity=".8"/>
+              </g>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">一口森林</text>
+              <text x="42" y="112" fill="#8ec9ff" font-size="13" font-family="sans-serif" letter-spacing="4">BRAND FILM · 2025</text>
+            </svg>
+            <span class="dur">02:38</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>品牌短片</span><span>2025</span></div>
+            <h3>一口森林 · 气泡水品牌片</h3>
+            <p>把发酵过程拍成微观风景，用延时与微距让一瓶饮料拥有自己的季节。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+        <article class="work" data-cat="doc">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《晚风里的人》封面">
+              <defs><linearGradient id="w3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a1d33"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w3)"/>
+              <g fill="#ff7a5c" fill-opacity=".8">
+                <rect x="120" y="230" width="16" height="90" rx="8"/>
+                <circle cx="128" cy="212" r="22" fill="#f6f2e9" fill-opacity=".85"/>
+              </g>
+              <g fill="#f6f2e9" fill-opacity=".3">
+                <rect x="200" y="260" width="14" height="60" rx="7"/>
+                <circle cx="207" cy="244" r="18"/>
+                <rect x="250" y="270" width="14" height="50" rx="7"/>
+                <circle cx="257" cy="254" r="16"/>
+              </g>
+              <g stroke="#c8ff3d" stroke-opacity=".45" fill="none">
+                <path d="M360 300 Q410 250 470 290 T610 270"/>
+              </g>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">晚风里的人</text>
+              <text x="42" y="112" fill="#ff7a5c" font-size="13" font-family="sans-serif" letter-spacing="4">DOCUMENTARY · 2025</text>
+            </svg>
+            <span class="dur">11:06</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>纪录现场</span><span>2025</span></div>
+            <h3>晚风里的人 · 社区纪录</h3>
+            <p>连续十二个傍晚的街角观察，记录一座城市入夜前的松弛时刻与陌生人。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+        <article class="work" data-cat="mv">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《孢子》封面">
+              <defs><linearGradient id="w4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2b26"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w4)"/>
+              <g fill="#6fe7c0" fill-opacity=".55">
+                <circle cx="160" cy="140" r="10"/><circle cx="230" cy="200" r="6"/><circle cx="300" cy="120" r="14"/>
+                <circle cx="380" cy="230" r="8"/><circle cx="470" cy="150" r="16"/><circle cx="540" cy="250" r="7"/>
+              </g>
+              <g stroke="#f6f2e9" stroke-opacity=".16" fill="none">
+                <path d="M0 340 Q160 260 320 330 T640 300"/>
+              </g>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">孢子</text>
+              <text x="42" y="112" fill="#6fe7c0" font-size="13" font-family="sans-serif" letter-spacing="4">MUSIC VIDEO · 2023</text>
+            </svg>
+            <span class="dur">03:47</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>音乐影像</span><span>2023</span></div>
+            <h3>孢子 · 电子音乐人合作</h3>
+            <p>用微距摄影与光绘构建的迷幻空间，一次没有演员、只有自然与光的拍摄。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+        <article class="work" data-cat="brand">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《慢一点》封面">
+              <defs><linearGradient id="w5" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#30281a"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w5)"/>
+              <g fill="none" stroke="#c8ff3d" stroke-opacity=".5">
+                <circle cx="480" cy="200" r="80"/><circle cx="480" cy="200" r="120" stroke-opacity=".2"/>
+              </g>
+              <rect x="120" y="150" width="120" height="160" rx="14" fill="#f6f2e9" fill-opacity=".12" stroke="#f6f2e9" stroke-opacity=".25"/>
+              <rect x="140" y="176" width="80" height="8" rx="4" fill="#f6f2e9" fill-opacity=".4"/>
+              <rect x="140" y="196" width="56" height="8" rx="4" fill="#f6f2e9" fill-opacity=".25"/>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">慢一点</text>
+              <text x="42" y="112" fill="#c8ff3d" font-size="13" font-family="sans-serif" letter-spacing="4">BRAND FILM · 2024</text>
+            </svg>
+            <span class="dur">01:50</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>品牌短片</span><span>2024</span></div>
+            <h3>慢一点 · 生活方式品牌</h3>
+            <p>三组人物的清晨切片，用手持与自然声呈现产品之外的节奏感。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+        <article class="work" data-cat="doc">
+          <div class="thumb">
+            <svg viewBox="0 0 640 400" role="img" aria-label="作品《棚内十二人》封面">
+              <defs><linearGradient id="w6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b222c"/><stop offset="1" stop-color="#0e1216"/></linearGradient></defs>
+              <rect width="640" height="400" fill="url(#w6)"/>
+              <g fill="#f6f2e9" fill-opacity=".22">
+                <circle cx="140" cy="230" r="24"/><circle cx="210" cy="240" r="24"/><circle cx="280" cy="228" r="24"/>
+                <circle cx="350" cy="242" r="24"/><circle cx="420" cy="226" r="24"/><circle cx="490" cy="240" r="24"/>
+              </g>
+              <rect x="100" y="280" width="440" height="8" rx="4" fill="#c8ff3d" fill-opacity=".4"/>
+              <text x="42" y="80" fill="#f6f2e9" fill-opacity=".9" font-size="26" font-family="sans-serif" font-weight="700" letter-spacing="2">棚内十二人</text>
+              <text x="42" y="112" fill="#8ec9ff" font-size="13" font-family="sans-serif" letter-spacing="4">DOCUMENTARY · 2023</text>
+            </svg>
+            <span class="dur">08:24</span>
+          </div>
+          <div class="body">
+            <div class="meta"><span>纪录现场</span><span>2023</span></div>
+            <h3>棚内十二人 · 幕后纪录</h3>
+            <p>一次没有脚本的拍摄：把十二位幕后工作者放进同一间棚，听他们聊为什么拍片。</p>
+            <span class="watch">观看片段 →</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-band">
+    <div class="wrap" style="padding-inline:0">
+      <div class="stats-grid">
+        <div class="stat reveal"><strong>320+</strong><span>累计交付作品</span></div>
+        <div class="stat reveal"><strong>1.8亿</strong><span>全网播放量</span></div>
+        <div class="stat reveal"><strong>96%</strong><span>客户返约率</span></div>
+        <div class="stat reveal"><strong>24h</strong><span>需求响应时效</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">合作流程</span>
+        <h2>从一句模糊的想法，到一支能发布的成片</h2>
+        <p>蘑菇mv传媒把合作拆成四个清晰阶段，每个阶段都有可确认的交付物。你不需要懂片场术语，只需要把想表达的东西讲给我们听。</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <h4>聊与听</h4>
+          <p>一次 40 分钟的需求对谈，梳理目标受众、使用场景与预算区间，给出可行性判断。</p>
+        </div>
+        <div class="step reveal">
+          <h4>提案与脚本</h4>
+          <p>输出创意方向、参考片单、分镜脚本与拍摄排期，确认后再进入制作，避免反复返工。</p>
+        </div>
+        <div class="step reveal">
+          <h4>拍摄与后期</h4>
+          <p>导演与摄影常驻现场，剪辑、调色、混音在同一流程里推进，每日同步进度。</p>
+        </div>
+        <div class="step reveal">
+          <h4>交付与复用</h4>
+          <p>成片按平台规格切割，附字幕工程与素材归档，方便后续二次传播与投放。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">核心团队</span>
+        <h2>拍摄现场的每一个人，都值得被署名</h2>
+        <p>蘑菇mv传媒采用小核心 + 大协作的网络结构，固定成员负责创意与品控，长期合作者覆盖摄影、美术、造型与声音。</p>
+      </div>
+      <div class="team-grid">
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 300 300" role="img" aria-label="导演阿蕈头像插画">
+              <rect width="300" height="300" fill="#1d2b26"/>
+              <circle cx="150" cy="120" r="52" fill="#f6f2e9" fill-opacity=".85"/>
+              <path d="M60 300c0-50 40-84 90-84s90 34 90 84Z" fill="#c8ff3d" fill-opacity=".7"/>
+              <circle cx="132" cy="112" r="5" fill="#0e1216"/><circle cx="168" cy="112" r="5" fill="#0e1216"/>
+              <path d="M138 138q12 10 24 0" stroke="#0e1216" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="info"><h4>阿蕈</h4><div class="role">导演 / 联合创始人</div><p>擅长把叙事压进细节，拍过最多的是雨夜与长镜头。</p></div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 300 300" role="img" aria-label="摄影指导林一川头像插画">
+              <rect width="300" height="300" fill="#20283a"/>
+              <circle cx="150" cy="120" r="52" fill="#f6f2e9" fill-opacity=".85"/>
+              <path d="M60 300c0-50 40-84 90-84s90 34 90 84Z" fill="#8ec9ff" fill-opacity=".65"/>
+              <rect x="112" y="104" width="34" height="18" rx="6" fill="#0e1216" fill-opacity=".7"/>
+              <rect x="154" y="104" width="34" height="18" rx="6" fill="#0e1216" fill-opacity=".7"/>
+              <path d="M140 140h20" stroke="#0e1216" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="info"><h4>林一川</h4><div class="role">摄影指导</div><p>自然光主义者，随身带测光表和两块备用电池。</p></div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 300 300" role="img" aria-label="剪辑指导苏禾头像插画">
+              <rect width="300" height="300" fill="#2c2130"/>
+              <circle cx="150" cy="120" r="52" fill="#f6f2e9" fill-opacity=".85"/>
+              <path d="M60 300c0-50 40-84 90-84s90 34 90 84Z" fill="#ff7a5c" fill-opacity=".6"/>
+              <circle cx="134" cy="114" r="5" fill="#0e1216"/><circle cx="166" cy="114" r="5" fill="#0e1216"/>
+              <path d="M140 136q10 8 20 0" stroke="#0e1216" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="info"><h4>苏禾</h4><div class="role">剪辑指导</div><p>相信节奏比转场更重要，能把素材库剪出呼吸。</p></div>
+        </div>
+        <div class="member reveal">
+          <div class="avatar">
+            <svg viewBox="0 0 300 300" role="img" aria-label="声音设计周屿头像插画">
+              <rect width="300" height="300" fill="#1f2c27"/>
+              <circle cx="150" cy="120" r="52" fill="#f6f2e9" fill-opacity=".85"/>
+              <path d="M60 300c0-50 40-84 90-84s90 34 90 84Z" fill="#6fe7c0" fill-opacity=".65"/>
+              <circle cx="134" cy="114" r="5" fill="#0e1216"/><circle cx="166" cy="114" r="5" fill="#0e1216"/>
+              <path d="M136 138q14 8 28 0" stroke="#0e1216" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="info"><h4>周屿</h4><div class="role">声音设计</div><p>收集城市声响做成音库，混音台前坐得住八小时。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="section" id="journal" style="background:var(--ink-2)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">厂牌手记</span>
+        <h2>把拍摄之外的思考，也记录下来</h2>
+        <p>蘑菇mv传媒会不定期更新制作手记、器材心得与社区活动，写给我们自己，也写给同样在做影像的人。</p>
+      </div>
+      <div class="journal-grid">
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="手记封面一">
+              <rect width="640" height="360" fill="#16241c"/>
+              <g stroke="#c8ff3d" stroke-opacity=".45" fill="none">
+                <path d="M60 280 Q160 180 260 260 T460 220 T620 250"/>
+                <path d="M60 310 Q170 220 270 290 T470 250 T620 280"/>
+              </g>
+              <circle cx="500" cy="110" r="46" fill="#c8ff3d" fill-opacity=".35"/>
+              <text x="48" y="90" fill="#f6f2e9" fill-opacity=".55" font-size="15" font-family="sans-serif" letter-spacing="4">JOURNAL 01</text>
+            </svg>
+          </div>
+          <div class="txt">
+            <span class="tag">制作手记</span>
+            <h4>为什么我们坚持在实景里拍雨</h4>
+            <p>绿幕能省预算，但水花打在衣领上的重量骗不了人。聊聊一次通宵雨戏的准备清单。</p>
+            <time datetime="2025-05-18">2025 年 5 月 18 日</time>
+          </div>
+        </article>
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="手记封面二">
+              <rect width="640" height="360" fill="#1b2230"/>
+              <g fill="#8ec9ff" fill-opacity=".5">
+                <circle cx="150" cy="180" r="26"/><circle cx="240" cy="140" r="14"/><circle cx="320" cy="200" r="34"/>
+                <circle cx="430" cy="150" r="18"/><circle cx="520" cy="210" r="24"/>
+              </g>
+              <rect x="80" y="280" width="480" height="3" rx="1.5" fill="#f6f2e9" fill-opacity=".25"/>
+              <text x="48" y="90" fill="#f6f2e9" fill-opacity=".55" font-size="15" font-family="sans-serif" letter-spacing="4">JOURNAL 02</text>
+            </svg>
+          </div>
+          <div class="txt">
+            <span class="tag">器材心得</span>
+            <h4>一支定焦走完一支 MV 的可能</h4>
+            <p>限制往往带来风格。我们试过只用 35mm 拍完整支片子，结果比想象中自由。</p>
+            <time datetime="2025-03-02">2025 年 3 月 2 日</time>
+          </div>
+        </article>
+        <article class="post reveal">
+          <div class="cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="手记封面三">
+              <rect width="640" height="360" fill="#2a2028"/>
+              <g fill="#ff7a5c" fill-opacity=".55">
+                <rect x="120" y="190" width="16" height="90" rx="8"/>
+                <circle cx="128" cy="172" r="20"/>
+                <rect x="200" y="210" width="16" height="70" rx="8"/>
+                <circle cx="208" cy="192" r="18"/>
+                <rect x="280" y="200" width="16" height="80" rx="8"/>
+                <circle cx="288" cy="182" r="19"/>
+              </g>
+              <text x="48" y="90" fill="#f6f2e9" fill-opacity=".55" font-size="15" font-family="sans-serif" letter-spacing="4">JOURNAL 03</text>
+            </svg>
+          </div>
+          <div class="txt">
+            <span class="tag">社区活动</span>
+            <h4>孢子计划第六期：向所有独立创作者开放</h4>
+            <p>提供三天棚拍时段与后期支持，入选者只需带着一个还没拍出来的故事来。</p>
+            <time datetime="2025-01-11">2025 年 1 月 11 日</time>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">合作者说</span>
+        <h2>片子发出去之后，他们这样反馈</h2>
+      </div>
+      <div class="quote-wrap">
+        <blockquote class="quote reveal">
+          <span class="mark">“</span>
+          <p>从第一次对谈到成片上线只用了五周。他们没有把我们的想法改得面目全非，而是把它拍得更清楚了。</p>
+          <footer><b>陈绪 · 独立乐队主唱</b>《潮湿的夏天》MV</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="mark">“</span>
+          <p>品牌片上线后，评论区第一次有人讨论画面而不是价格。蘑菇mv传媒帮我们把产品讲成了一个有温度的故事。</p>
+          <footer><b>林嘉 · 消费品牌市场负责人</b>《一口森林》品牌片</footer>
+        </blockquote>
+        <blockquote class="quote reveal">
+          <span class="mark">“</span>
+          <p>作为社区机构，我们最怕拍成宣传片。他们花了十二个傍晚蹲在街角，最后剪出来的东西，居民自己愿意转发。</p>
+          <footer><b>何岸 · 社区文化中心策展人</b>《晚风里的人》纪录</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq" style="background:var(--ink-2)">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+        <span class="eyebrow" style="justify-content:center">常见问答</span>
+        <h2>合作之前，你可能想知道这些</h2>
+      </div>
+      <div class="faq">
+        <div class="faq-item open">
+          <button class="faq-q" aria-expanded="true">蘑菇mv传媒的起订预算大概是多少？<span class="ico">+</span></button>
+          <div class="faq-a"><div>常规音乐 MV 与品牌短片的制作预算根据拍摄天数、场景数量与后期复杂度核算。我们会在首次沟通后给出区间方案，并明确哪些环节可以增减。小体量的社区纪录与艺术家合作项目，可通过「孢子计划」申请支持。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">从确认合作到拿到成片需要多久？<span class="ico">+</span></button>
+          <div class="faq-a"><div>标准流程约 4 到 6 周：提案与脚本 1 周，筹备与拍摄 1 至 2 周，粗剪与修改 2 周，调色混音与交付 1 周。如果排期紧张，我们可以在不牺牲质量的前提下压缩部分环节，具体以项目排期表为准。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">你们接外地或海外的拍摄吗？<span class="ico">+</span></button>
+          <div class="faq-a"><div>接。蘑菇mv传媒常驻本地，外地项目会提前安排勘景与器材运输方案，海外项目通常与当地制片伙伴联合执行。差旅与落地成本会单列在报价中，透明可查。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">成片版权和素材归属怎么处理？<span class="ico">+</span></button>
+          <div class="faq-a"><div>成片使用权按合同约定授予委托方，原始素材归档保存一年，可另行购买长期存档服务。我们仅在获得授权后，将作品用于厂牌作品集展示。</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">如果只有一句模糊的想法，可以聊吗？<span class="ico">+</span></button>
+          <div class="faq-a"><div>当然可以。蘑菇mv传媒的很多项目都始于一句没想清楚的话。首次沟通不收费，我们会一起把想法拆成可执行的画面，再判断是否值得拍、怎么拍最划算。</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="eyebrow">发起合作</span>
+        <h2>你带着故事来，我们负责让它发光</h2>
+        <p>无论是一支 MV、一条品牌短片，还是一次社区纪录，蘑菇mv传媒都愿意先听你说完。填写需求或直接来信，我们会在 24 小时内回复。</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:hello@mushroommv.studio">hello@mushroommv.studio</a>
+          <a class="btn btn-ghost" href="#works">先看看作品</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3c3.6 0 6.5 2.9 6.5 6.5 0 1.6-.6 3-1.6 4.1.4.6.6 1.4.6 2.2 0 .6-.1 1.1-.4 1.6-.6-1-1.6-1.7-2.8-1.7-.7 0-1.4.2-1.9.7-.6-.5-1.3-.7-2-.7-1.2 0-2.2.7-2.8 1.7-.3-.5-.4-1-.4-1.6 0-.8.2-1.6.6-2.2A6.5 6.5 0 0 1 5.5 9.5C5.5 5.9 8.4 3 12 3Z" fill="#14210a"/>
+              <rect x="10.9" y="12.6" width="2.2" height="8" rx="1.1" fill="#14210a"/>
+            </svg>
+          </span>
+          <span>蘑菇mv传媒<small>MUSHROOM MV MEDIA</small></span>
+        </a>
+        <p>一间相信故事会生长的影像厂牌。音乐影像、品牌短片、纪录现场与社区共创，欢迎来棚里坐坐。</p>
+        <form class="newsletter" onsubmit="return false;">
+          <input type="email" placeholder="留下邮箱，接收厂牌手记" aria-label="邮箱地址">
+          <button type="submit">订阅</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h5>业务</h5>
+        <a href="#works">音乐影像</a>
+        <a href="#works">品牌短片</a>
+        <a href="#works">纪录现场</a>
+        <a href="#process">后期与调色</a>
+      </div>
+      <div class="footer-col">
+        <h5>厂牌</h5>
+        <a href="#about">关于我们</a>
+        <a href="#team">核心团队</a>
+        <a href="#journal">厂牌手记</a>
+        <a href="#faq">常见问答</a>
+      </div>
+      <div class="footer-col">
+        <h5>联系</h5>
+        <span>hello@mushroommv.studio</span>
+        <span>工作日 10:00 – 19:00</span>
+        <span>城南创意园 B 棚 3 层</span>
+        <div class="socials" style="margin-top:.8rem">
+          <a href="#top" aria-label="微博">微</a>
+          <a href="#top" aria-label="小红书">红</a>
+          <a href="#top" aria-label="B站">B</a>
+          <a href="#top" aria-label="抖音">抖</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 蘑菇mv传媒 MUSHROOM MV MEDIA · 保留所有权利</span>
+      <span>影像让灵感留下形状</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Mobile menu
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  if(burger && menu){
+    burger.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    menu.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        menu.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // Works filter
+  var filters = document.querySelectorAll('.filter');
+  var works = document.querySelectorAll('#workGrid .work');
+  filters.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      filters.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var cat = btn.getAttribute('data-filter');
+      works.forEach(function(w){
+        var show = (cat === 'all') || (w.getAttribute('data-cat') === cat);
+        w.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  // FAQ accordion
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-a');
+    function setOpen(open){
+      item.classList.toggle('open', open);
+      q.setAttribute('aria-expanded', open ? 'true' : 'false');
+      a.style.maxHeight = open ? (a.scrollHeight + 20) + 'px' : '0px';
+    }
+    // init
+    setOpen(item.classList.contains('open'));
+    q.addEventListener('click', function(){
+      var willOpen = !item.classList.contains('open');
+      faqItems.forEach(function(other){
+        if(other !== item){
+          other.classList.remove('open');
+          other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+          other.querySelector('.faq-a').style.maxHeight = '0px';
+        }
+      });
+      setOpen(willOpen);
+    });
+  });
+
+  // Reveal on scroll
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.12});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // Smooth anchor fallback with sticky offset
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 78;
+      window.scrollTo({top: top, behavior: 'smooth'});
+    });
+  });
+
+  // Simple marquee pause on hover
+  var track = document.querySelector('.marquee-track');
+  var marquee = document.querySelector('.marquee');
+  if(track && marquee){
+    marquee.addEventListener('mouseenter', function(){ track.style.animationPlayState = 'paused'; });
+    marquee.addEventListener('mouseleave', function(){ track.style.animationPlayState = 'running'; });
+  }
+
+  // Newsletter feedback
+  var form = document.querySelector('.newsletter');
+  if(form){
+    form.addEventListener('submit', function(){
+      var input = form.querySelector('input');
+      var btn = form.querySelector('button');
+      if(input.value.trim() && input.value.indexOf('@') > 0){
+        btn.textContent = '已订阅';
+        btn.style.background = '#6fe7c0';
+        input.value = '';
+        setTimeout(function(){ btn.textContent = '订阅'; btn.style.background = ''; }, 2600);
+      } else {
+        input.focus();
+      }
+    });
+  }
+})();
+</script>
+</body>
+                                                           </html>
